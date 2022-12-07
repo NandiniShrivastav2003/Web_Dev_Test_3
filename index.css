@@ -1,0 +1,121 @@
+#navbar{
+    height: 26vh;
+    width: 99vw;
+    background-color:gray ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    height: 17px;
+    width: 40px;
+   
+}
+.box1{
+    
+    background-color: #bbafaf;
+    position: absolute;
+    height: 56px;
+    width: 198px;
+    left: 170px;
+    top: 10px;
+}
+.box2{
+    
+    background-color: #bbafaf;
+    position: absolute;
+    height: 56px;
+    width: 198px;
+    left: 503px;
+    top: 10px;
+
+}
+#red{
+    background-color: red;
+    position: absolute;
+    top: 16px;
+    border: 1px solid white;
+    left: 2px;
+}
+#green{
+    background-color: green;
+    position: absolute;
+    top: 16px;
+    border: 1px solid white;
+    left: 53px;
+}
+#aqua{
+    background-color:aqua;
+    position: absolute;
+    top: 16px;
+    border: 1px solid white;
+    left: 103px;
+}
+#black{
+    background-color: black;
+    position: absolute;
+    top: 16px;
+    border: 1px solid white;
+    left: 152px;
+    
+}
+#text-box{
+    width: 306px;
+    position: absolute;
+    top: 40%;
+   
+    height: 222px;
+    left: 37%;
+    border: 5px solid black;
+    text-align: center;
+}
+#container{
+    display: flex;
+   
+    align-items: center;
+    flex-direction: row;
+    gap:12px;
+}
+.mydesign{
+
+    height: 100px;
+    width: 100px;
+    
+    background-color: aliceblue;
+    padding: 12px;
+    text-align: center;
+}
+ #post1{
+    position: absolute;
+    width:50px;
+    height: 30px;
+    right: 0px;
+    top: 96px;
+    background-color: aqua;
+}
+#post2{
+    position: absolute;
+    width:50px;
+    height: 30px;
+    top: 14px;
+    right: 0px;
+    background-color: black;
+}
+#post3{
+    position: absolute;
+    width:50px;
+    height: 30px;
+    right: 0px;
+    top:139px;
+    background-color:red;
+}
+#post{
+    position: absolute;
+    width:50px;
+    right: 0px;
+    height: 30px;
+    top: 55px;
+    background-color: green;
+} 
