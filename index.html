@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ticket</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <section id="navbar">
-<div class="box1">
-    <ul>
-        <li id="red"></li>
-        <li id="green"></li>
-        <li id="black"></li>
-        <li id="aqua"></li>
-    </ul>
-</div>
-<div class="box2">
-    <ul>
-        <button id="plus" style="    padding: 11px;" ><i class="fa fa-plus" aria-hidden="true"></i></button>
-        <button id="del" style="padding: 11px;"><i class="fa fa-trash"  aria-hidden="true"></i></button>
-    </ul>
-</div>
-    </section>
-    <section id="text-box" class="show" style="display: none">
-        <textarea  id="area" style=" width: 192px;
-        height: 154px; ">
+    <header class="header">
+       <div class="color-panel">
+        <div class="color-item" id="red" onclick="ticket_color('red')"></div>
+        <div class="color-item" id="blue" onclick="ticket_color('blue')"></div>
+        <div class="color-item" id="green" onclick="ticket_color('green')"></div>
+        <div class="color-item" id="black" onclick="ticket_color('black')"></div>
+       </div>
+       <div class="adder-column">
+        <div class="adder-btn" id="adder-btn">
+            <i class="fa-solid fa-plus fa-2x"></i>
+        </div>
+        <div class="delete-btn" id="delete-btn" onclick="del(item)">
+            <i class="fa-solid fa-trash fa-2x"></i>
+        </div>
+       </div>
+    </header>
+    <div class="tickets" id="tickets"></div>
+    <section class="new-ticket-section" id="new-ticket-section">
+        <textarea name="text-input" class="text-input" id="text" cols="30" rows="10"></textarea>
+        <div class="color-picker">
+            <div class="color-items">
+                <div class="colors red" onclick="ticket_color('red')">
 
-        </textarea>
-        <p>use green button to add</p>
-       <button id="post"></button>
-       <button id="post1"></button>
-       <button id="post2"></button>
-       <button id="post3"></button>
-    </section>
-    <div id="container">
+                </div>
+                <div class="colors blue" onclick="ticket_color('blue')">
 
-    </div>
+                </div>
+                <div class="colors green" onclick="ticket_color('green')">
+
+                </div>
+                <div class="colors black" onclick="ticket_color('black')">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
 </body>
 <script src="index.js"></script>
 </html>
